@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading{
+    border: 1px solid red;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.loading span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    animation: maware 1.5s infinite;
+}
+.loading span:nth-child(1){}
+.loading span:nth-child(2){
+    animation-delay: 0.75s;
+}
+
+@keyframes maware{
+    0%{
+        top: 0;
+        left: 0;
+        background-color: hotpink;
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 10px);
+        background-color: skyblue;
+    }
+    50%{
+        top: calc(100% - 10px);
+        left: calc(100% - 10px);
+        background-color: yellow;
+    }
+    75%{
+        top:calc(100% - 10px);
+        left: 0;
+        background-color: greenyellow;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}

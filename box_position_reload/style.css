@@ -6,7 +6,7 @@ body{
 }
 
 .loading{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 30px;
     height: 30px;
     position: relative;
